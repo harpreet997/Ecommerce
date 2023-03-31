@@ -16,29 +16,9 @@
     padding: 0 2rem;
 }
 
-.nav-bar h2 {
-    font-size: 20px;
-    text-decoration: none !important;
-}
-
-.nav-bar a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-bag {
+.add-button {
     display: flex;
     align-items: center;
-}
-
-.nav-bag span {
-    font-size: 20px;
-    background-color: yellow;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    padding-left: 10px;
-    color: black;
 }
 
 .products-card {
@@ -63,3 +43,4 @@
 .textarea {
     border-radius: 10px;
 }
+

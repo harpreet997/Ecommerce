@@ -7,6 +7,7 @@ import '../../styles/products/productlist.css';
 import { deleteProductDetail } from "../../api/postmethod/postmethod";
 import { toast } from "react-toastify";
 import EditProduct from "./EditProduct";
+import logo from '../../images/logo.jpg';
 
 const ProductList = () => {
     const [productdata, setProductData] = useState([]);
@@ -47,9 +48,8 @@ const ProductList = () => {
     return (
         <>
             <nav className="nav-bar">
-                <Link to="/"><h2>Online Shopping </h2></Link>
-
-                <div className="nav-bag">
+                <Link to="/"><img src={logo} alt="companyLogo" width={100} /></Link>
+                <div className="add-button">
                     <button className="btn btn-primary w-100" onClick={handleAddProductModal}>Add Product</button>
                 </div>
                 <Modal show={addproductModal}
@@ -74,7 +74,7 @@ const ProductList = () => {
                                     }}>Edit Product</button>
                                     <button className="btn btn-warning w-50" onClick={() => DeleteProduct(item.id)}>Delete Product</button>
                                 </div>
-                                <Modal show={editproductModal === item.id ? true : false}>
+                                <Modal show={editproductModal === item.id ? true : false} onHide={closeEditModal}>
                                     <EditProduct data={item} closeEditModal={closeEditModal} />
                                 </Modal>
                             </div>
