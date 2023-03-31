@@ -75,7 +75,7 @@ const AddProduct = ({ closeAddModal }) => {
                     <input className="w-100 mb-2 input" type="number" step={0.1} min={1} max={5} name="rating" placeholder='Enter Rating'
                         onChange={handleChange} required /><br />
                     <label htmlFor="details" className='fs-5 mb-2'>Description</label><br />
-                    <textarea className="mb-2 textarea ps-2" name="description" cols="40" rows="5"
+                    <textarea className="mb-2 w-100 textarea ps-2" name="description" rows="5"
                         onChange={handleChange} placeholder='Enter Description' required></textarea><br />
                 </Modal.Body>
                 <Modal.Footer>

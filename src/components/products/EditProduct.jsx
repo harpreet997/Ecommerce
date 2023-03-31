@@ -56,7 +56,7 @@ const EditProduct = ({ closeEditModal, data }) => {
     return (
         <>
             <Modal.Header closeButton>
-                <Modal.Title className="text-black" style={{ paddingLeft: 160 }}>Edit Product</Modal.Title>
+                <Modal.Title className="text-black">Edit Product</Modal.Title>
             </Modal.Header>
             <form onSubmit={updateProduct}>
                 <Modal.Body>
@@ -82,7 +82,7 @@ const EditProduct = ({ closeEditModal, data }) => {
                     max={5} name="rating" placeholder='Enter Rating'
                         onChange={handleChange} required /><br />
                     <label htmlFor="details" className='fs-5 mb-2'>Description</label><br />
-                    <textarea className="mb-2 textarea ps-2" name="description" cols="52" rows="5"
+                    <textarea className="mb-2 w-100 textarea ps-2" name="description" rows="5"
                         value={editproductdata.description} onChange={handleChange} placeholder='Enter Description' required></textarea><br />
                 </Modal.Body>
                 <Modal.Footer>
